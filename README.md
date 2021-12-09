@@ -1,0 +1,3 @@
+## This is the repository for configuring google cloud platform storage resource using terraform.
+
+The configuration terraform files will be populated in due time...
