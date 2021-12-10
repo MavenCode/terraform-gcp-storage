@@ -6,3 +6,8 @@ resource "google_storage_bucket" "gcp_bucket" {
   storage_class = var.storage-class
   versioning    = var.enable_versioning
 }
+
+resource "google_storage_bucket_iam_binding" "storage_admin" {
+    bucket   = google_storage_bucket.gcp_bucket.name
+    role     = "roles/storage.admin"
+    members  =  var.admin

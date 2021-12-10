@@ -20,6 +20,12 @@ variable "force_destroy" {
   default     = false
 }
 
+variable "admin" {
+  description = "IAM-style members who will be granted roles/storage.objectAdmin on all buckets."
+  type        = list(string)
+  default     = []
+}
+
 variable "storage-class" {
   description = "The Storage class of the GCS bucket. Supported Values - STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE"
   type        = string
