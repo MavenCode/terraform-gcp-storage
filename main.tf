@@ -11,3 +11,4 @@ resource "google_storage_bucket_iam_binding" "storage_admin" {
     bucket   = google_storage_bucket.gcp_bucket.name
     role     = "roles/storage.admin"
     members  =  var.admin
+}
