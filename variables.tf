@@ -8,7 +8,7 @@ variable "gcp_project_id" {
   type        = string
 }
 
-variable "gcs_region" {
+variable "gcp_region" {
   description = "GCS Location."
   type        = string
   default     = "EU"
