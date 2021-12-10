@@ -42,3 +42,5 @@ variable "enable_versioning" {
   type        = bool
   default     = false
 }
+
+variable "credential_link" {}
